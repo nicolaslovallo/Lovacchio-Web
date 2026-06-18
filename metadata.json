@@ -1,6 +1,6 @@
 {
-  "name": "Lovacchio Helados Gourmet",
-  "description": "Página oficial de Lovacchio | Fabricación, distribución y venta mayorista de polos de helado frutales y gourmet en Madrid, España.",
+  "name": "Lovacchio Helados",
+  "description": "Sitio web de Lovacchio Helados. Venta mayorista y eventos de polos artesanales de fruta fresca en Madrid, Espana.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
