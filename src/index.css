@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #f48b94;
+  --color-brand-pink-dark: #de727b;
+  --color-brand-pink-light: #fdf2f3;
+  --color-brand-celeste: #6ec3b4;
+  --color-brand-celeste-dark: #58a99a;
+  --color-brand-celeste-light: #edfbf9;
+  --color-brand-dark: #2f3a3a;
+  --font-fredoka: "Fredoka", "Inter", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-brand-dark);
+    background-color: #fafbfc;
+  }
+}
+
+/* Custom whimsical styles */
+.bubble-shadow {
+  box-shadow: 0 10px 30px -10px rgba(244, 139, 148, 0.25), 0 8px 20px -12px rgba(110, 195, 180, 0.25);
+}
+
+.organic-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.organic-blob-2 {
+  border-radius: 30% 70% 70% 30% / 50% 60% 40% 50%;
+}
+
+/* --- Frosted Glass Theme Utilities --- */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.glass-effect-strong {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.glass-effect-pink {
+  background: rgba(255, 237, 240, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-effect-celeste {
+  background: rgba(224, 247, 250, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: #f48b94;
+  box-shadow: 0 0 0 3px rgba(244, 139, 148, 0.2);
+}
+
